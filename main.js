@@ -17,3 +17,26 @@ function toggleDetail(el) {
     const detail = $((item).children(".about-exp-item-detail"))
     $(detail).slideToggle()
 }
+
+function onFormSubmit(e) {
+    e.preventDefault()
+    const email = $("#msk_email")
+    const subject = $("#msk_subject")
+    const kesan = $("#msk_kesan")
+    
+    // Untuk memeriksa apakah input yang dilakukan berjalan
+    // console.log($(subject).val())
+
+    if(!$(email).val()) {
+        alert("Email dibutuhkan")
+    } else if (!$(subject).val()) {
+        alert("Subject dibutuhkan")
+    } else if (!$(kesan).val()) {
+        alert("Kesan kamu apa")
+    } else {
+        alert("Form diterima")
+        $(email).val("")
+        $(subject).val("")
+        $(kesan).val("")
+    }
+}

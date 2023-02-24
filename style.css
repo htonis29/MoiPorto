@@ -124,6 +124,23 @@ section::before {
     content: 'RESUME';
 }
 
+.contact {
+    padding-bottom: 128px;
+}
+
+.contact::before {
+    content: 'Contact';
+}
+
+.contactform {
+    border: 2px solid darkblue;
+    padding: 64px 32px;
+}
+
+.form-label {
+    font-weight: 700;
+}
+
 @keyframes upDown {
     0% {
         transform: translateY(0);
