@@ -39,6 +39,10 @@ section::before {
     font-size: 36px;
 }
 
+.home .col-4 img {
+    width: 100%;
+}
+
 .home .panah img {
     width: 80px;
 }
@@ -140,6 +144,19 @@ section::before {
 .form-label {
     font-weight: 700;
 }
+
+@media only screen and (max-width: 786px) {
+    .home img {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    section::before {
+        left: -10px;
+        font-size: 64px;
+    }
+} 
 
 @keyframes upDown {
     0% {
